@@ -1,85 +1,73 @@
-<script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
-</script>
-
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+  <main id="app">
+    <section class="services">
+      
+      <div class="container">
+        <div class="text-center">
+          <span>Services We Provide</span>
+          <p>We drive our clients’ growth through innovation and hard work</p>
+        </div>
+       
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <Services v-for="service in services" :key="service.title" :service="service" />
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
+        </div>
     </div>
-  </header>
-
-  <RouterView />
+    </section>
+  </main>
 </template>
 
-<style scoped>
-header {
-  line-height: 1.5;
-  max-height: 100vh;
-}
+<script>
+import Services from './components/Services.vue'
+export default {
+  name: 'app',
+  components: { Services },
+  data() {
+    return {
+      services: [
+        {
+          icon: "",
+          title: 'Web Development',
+          text: "Get the customized, modern, browser- friendly, and pixel perfect web design with unique content ",
+          readme: ""
+        },
+        {
+          icon:"",
+          title: 'Cross Platform Apps',
+          text: "We create customized websites for reasonable rates to accommodate multiple devices.",
+          readme:""
+        },
+        {
+          icon:"",
+          title: 'Desktop Solutions',
+          text: "We provide constant monitoringand repairing services to make your site active 24/7.",
+          readme:""
+        },
+        {
+          icon:"",
+          title: 'UX & UI Design',
+          text: "With our innovative ui-ux design,we guarantee your project'sup-to-date.",
+          readme:""
+        },
+        {
+          icon:"",
+          title: 'Affordable SEO',
+          text: "Boost your website’s search enginevisibility and get the organictargeted audience",
+          readme:""
+        },
+        {
+          icon:"",
+          title: 'E- commerce',
+          text: "Boost your website’s search engine visibility and get the organic targeted audience",
+          readme:""
+        },
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-nav {
-  width: 100%;
-  font-size: 12px;
-  text-align: center;
-  margin-top: 2rem;
-}
-
-nav a.router-link-exact-active {
-  color: var(--color-text);
-}
-
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
-}
-
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
-}
-
-nav a:first-of-type {
-  border: 0;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-
-  nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
-
-    padding: 1rem 0;
-    margin-top: 1rem;
+      ]
+    }
   }
 }
+</script>
+
+<style>
+  
 </style>
