@@ -14,14 +14,14 @@
     <button @click="hanldeHidden()" v-else class="md:hidden block absolute top-6 right-12"> 
         <Font    class="text-2xl" icon=" fa-xmark"/> 
     </button>
-    <div class="md:flex gap-12 md:mx-0 mx-auto  md:col-span-3">
+    <div class="md:flex gap-12 md:mx-0 mx-auto  md:col-span-3 hidden">
     <ul class="md:mt-0 mt-4"  v-for="menu of menus" :key="menu.id">
         <li class="text-lg font-medium md:mb-0 mb-4">
             <RouterLink :to="menu.route">{{menu.listName}}</RouterLink>
         </li>
     </ul>
  </div>
-    <div class="md:col-span-1 md:text-current text-center">
+    <div class="md:col-span-1 md:text-current text-center md:inline-block hidden">
         <button class=" py-2 bg-black text-white px-5 hover:scale-95 transition-all">Contact Us <Font class="ml-3" icon="arrow-right"/></button>
        
     </div>
