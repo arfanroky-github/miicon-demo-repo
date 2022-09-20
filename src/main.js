@@ -9,6 +9,6 @@ import { fas } from '@fortawesome/free-solid-svg-icons';
 library.add(fas)
 
 const app = createApp(App)
-app.use(router)
+
 app.component('Font', FontAwesomeIcon)
-app.mount('#app')
+app.use(router).mount('#app')
