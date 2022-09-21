@@ -68,7 +68,7 @@
        </div>
     </div>
    </div>
-   <p class=" absolute bottom-0 left-[180px] pb-4 text-white">Copyright, miicon 2022. All rights reserved.</p>
+   <p class=" absolute bottom-0 md:left-[180px] left-12 pb-4 text-white">Copyright, miicon 2022. All rights reserved.</p>
    <p class=" absolute md:bottom-0 bottom-20 right-28 md:right-[400px] pb-4 text-white">Terms & Conditions</p>
   </footer>
 </template>
