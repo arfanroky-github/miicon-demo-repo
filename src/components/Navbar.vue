@@ -1,11 +1,10 @@
 <template>
-  <nav class="container mx-auto px-4">
+  <nav class="container mx-auto px-4 h-auto relative">
     <div class=" grid md:grid-cols-5 py-4 items-center">
       <div class="col-span-1">
         <RouterLink  to="/">
         <img :src="images.Logo" alt="">
-        <img class="absolute top-0 left-1/4 md:block hidden" :src="images.Vector_10" alt="">
-        <img class="absolute top-0 right-0 md:block hidden w-[200px]" :src="images.Vector_7" alt="">
+       
     </RouterLink>
       </div>
       <button @click="handleOpen()" v-if="!isOpen" class="md:hidden block absolute top-6 right-12"> 
@@ -14,33 +13,35 @@
     <button @click="hanldeHidden()" v-else class="md:hidden block absolute top-6 right-12"> 
         <Font    class="text-2xl" icon=" fa-xmark"/> 
     </button>
-    <div class="md:flex gap-12 md:mx-0 mx-auto  md:col-span-3 hidden">
+    <div :class="[!isOpen ? 'hidden': 'block']" class="md:flex gap-12 md:mx-0 mx-auto  md:col-span-3 h-auto md:mt-0 mt-6 bg-white w-full pl-4 z-10">
     <ul class="md:mt-0 mt-4"  v-for="menu of menus" :key="menu.id">
         <li class="text-lg font-medium md:mb-0 mb-4">
             <RouterLink :to="menu.route">{{menu.listName}}</RouterLink>
         </li>
     </ul>
  </div>
-    <div class="md:col-span-1 md:text-current text-center md:inline-block hidden">
+    <div :class="[!isOpen ? 'hidden': 'block']" class="md:col-span-1 ">
         <button class=" py-5 px-12 bg-black text-white hover:scale-95 transition-all">Contact Us <Font class="ml-3" icon="arrow-right"/></button>
        
     </div>
 
 </div>
+<img class="absolute top-0 left-[100px] md:hidden block" :src="images.Vector_8" alt="">
   </nav>
 </template>
 
-<script>
+<script >
     import { RouterLink } from 'vue-router';
     import Logo from '../assets/logo.png';
     import Vector_10 from '../assets/vector 10.png';
-    import Vector_7 from '../assets/vector 7.png';
+
+    import Vector_8 from '../assets/vector 8.png';
 export default {
     data(){
         return {
             images: {
                 Logo,
-                Vector_7,
+                Vector_8,
                 Vector_10
             },
 
@@ -61,9 +62,11 @@ export default {
     methods:{
         handleOpen(){
             this.isOpen = !this.isOpen;
+            console.log('open',this.isOpen);
         },
         hanldeHidden(){
-            this.isOpen = this.isOpen
+            this.isOpen = !this.isOpen
+            console.log('hidden',this.isOpen);
         }
     }
 }

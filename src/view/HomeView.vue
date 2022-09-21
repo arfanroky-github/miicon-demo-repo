@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto">
+  <div class="container mx-auto w-full relative md:h-[90vh]">
     <Navbar/>
     <Hero/>
   </div>
@@ -9,7 +9,8 @@
 import Navbar from '../components/Navbar.vue';
 import Hero from '../components/Hero.vue';
 export default {
-    components: { Navbar, Hero }
+    components: { Navbar, Hero,  },
+   
 }
 </script>
 

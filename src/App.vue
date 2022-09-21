@@ -1,18 +1,18 @@
 <template>
-  <div class="container">
-    <Navbar/>
-    <Hero/>
-  </div>
+    <HomeView/>
+    <Contact/>
+    <Footer/>
 </template>
 
 <script>
 
-import Navbar from './components/Navbar.vue';
-import Test from './components/Test.vue';
-import Hero from './components/Hero.vue';
+
+import HomeView from './view/HomeView.vue';
+import Contact from './components/Contact.vue';
+import Footer from './components/Footer.vue';
 export default {
   name: 'app',
-  components: { Navbar, Test, Hero },
+  components: { HomeView, Contact, Footer },
   data() {
     return {
 

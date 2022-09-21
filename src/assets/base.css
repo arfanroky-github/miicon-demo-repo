@@ -73,5 +73,5 @@ body {
   -moz-osx-font-smoothing: grayscale;
   overflow-y: hidden; /* Hide vertical scrollbar */
   overflow-x: hidden; /* Hide horizontal scrollbar */
-  position: relative;
+
 }
