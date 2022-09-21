@@ -4,8 +4,8 @@
       <div class="col-span-1">
         <RouterLink  to="/">
         <img :src="images.Logo" alt="">
-        <img class="absolute top-0 left-1/4 md:block hidden" :src="images.Vector_8" alt="">
-        <img class="absolute top-0 right-4 md:block hidden" :src="images.Vector_7" alt="">
+        <img class="absolute top-0 left-1/4 md:block hidden" :src="images.Vector_10" alt="">
+        <img class="absolute top-0 right-0 md:block hidden w-[200px]" :src="images.Vector_7" alt="">
     </RouterLink>
       </div>
       <button @click="handleOpen()" v-if="!isOpen" class="md:hidden block absolute top-6 right-12"> 
@@ -22,7 +22,7 @@
     </ul>
  </div>
     <div class="md:col-span-1 md:text-current text-center md:inline-block hidden">
-        <button class=" py-2 bg-black text-white px-5 hover:scale-95 transition-all">Contact Us <Font class="ml-3" icon="arrow-right"/></button>
+        <button class=" py-5 px-12 bg-black text-white hover:scale-95 transition-all">Contact Us <Font class="ml-3" icon="arrow-right"/></button>
        
     </div>
 
@@ -33,7 +33,7 @@
 <script>
     import { RouterLink } from 'vue-router';
     import Logo from '../assets/logo.png';
-    import Vector_8 from '../assets/vector 8.png';
+    import Vector_10 from '../assets/vector 10.png';
     import Vector_7 from '../assets/vector 7.png';
 export default {
     data(){
@@ -41,7 +41,7 @@ export default {
             images: {
                 Logo,
                 Vector_7,
-                Vector_8
+                Vector_10
             },
 
             menus:[
