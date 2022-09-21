@@ -1,7 +1,7 @@
 <template>
   <div class="md:w-[1920px] md:h-[800px] py-12" style="background: #FFC85A">
-    <div class="container mx-auto grid md:grid-cols-2 grid-cols-1 gap-6 h-full items-center px-8">
-        <div>
+    <div class="container mx-auto grid md:grid-cols-2 grid-cols-1 gap-6 h-full md:justify-self-stretch justify-self-center items-center px-8">
+        <div class="col-span-1 md:mx-0 mx-auto">
             <p class="text-sm font-bold pb-12">_______CONTACT</p>
             <h1 class="md:text-8xl text-5xl tracking-wider font-bold mb-5 ">Let's get in touch</h1>
             <p class="leading-8 text-lg">Have a ground breaking startup/business idea but don't <br class="md:block hidden"> know where to start? We'll give you all the support you need.</p>

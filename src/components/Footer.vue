@@ -1,7 +1,7 @@
 <template>
-  <footer class="md:w-full h-[500px] relative" style="background:#252525;">
+  <footer class="md:w-full md:h-[500px] md:pyx-4 py-12 relative" style="background:#252525;">
    <div class="container mx-auto grid md:grid-cols-2 grid-cols-1 gap-4 items-center h-full">
-    <div>
+    <div class="col-span-1 mx-auto">
         <img class="" :src="Brand_2" alt="">
         <p class="text-white py-5">Book your trip in minute, get full <br> control for much longer</p>
 
@@ -31,7 +31,7 @@
             </li>
         </ul>
     </div>
-    <div class="grid md:grid-cols-3 grid-cols-1">
+    <div class="grid grid-cols-3 gap-6 mx-auto py-12">
        <div>
         <h2 class="text-xl font-bold text-yellow-400 mb-4">Company</h2>
         <ul class="flex flex-col gap-y-3 text-white">
@@ -69,7 +69,7 @@
     </div>
    </div>
    <p class=" absolute bottom-0 left-[180px] pb-4 text-white">Copyright, miicon 2022. All rights reserved.</p>
-   <p class=" absolute bottom-0 right-[400px] pb-4 text-white">Terms & Conditions</p>
+   <p class=" absolute md:bottom-0 bottom-20 right-28 md:right-[400px] pb-4 text-white">Terms & Conditions</p>
   </footer>
 </template>
 
