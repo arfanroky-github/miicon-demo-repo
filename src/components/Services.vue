@@ -2,10 +2,10 @@
   <section class="services">
     
     <div class="min-h-screen  w-full" style="background-color: #f8fafc">
-      <h1 class="font-bold pt-10 text-5xl text-orange-300 text-center relative">Services <span class="text-stone-900">We Provide</span></h1>
-      <img class="absolute top-6 left-[1170px]" :src="Vector" alt="">
-      <img class="absolute top-10 left-[1185px]" :src="Vector1" alt="">
-      <img class="absolute top-[75px] left-[1190px]" :src="Vector2" alt="">
+      <h1 class="font-bold pt-10 md:text-5xl text-[30px] text-orange-300 text-center relative">Services <span class="text-stone-900">We Provide</span></h1>
+      <img class="absolute md:top-6 top-8 md:left-[1170px] left-[380px] md:w-auto w-2" :src="Vector" alt="">
+      <img class="absolute md:top-10 top-10 md:left-[1185px] left-[390px] md:w-auto w-4" :src="Vector1" alt="">
+      <img class="absolute md:top-[75px] top-16 md:left-[1190px] left-[395px] md:w-auto w-2" :src="Vector2" alt="">
       <p class="text-gray-700 text-center pt-4">We drive our clients’ growth through innovation and hard work</p>
      
         <div class="container mx-auto grid md:grid-cols-3 grid-cols-1 gap-6 pt-10">
