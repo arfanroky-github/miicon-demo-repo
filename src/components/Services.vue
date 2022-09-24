@@ -8,7 +8,7 @@
       <img class="absolute top-[75px] left-[1190px]" :src="Vector2" alt="">
       <p class="text-gray-700 text-center pt-4">We drive our clients’ growth through innovation and hard work</p>
      
-        <div class="container mx-auto grid md:grid-cols-3 grid-cols-1 gap-6 pt-8">
+        <div class="container mx-auto grid md:grid-cols-3 grid-cols-1 gap-6 pt-10">
         <ServiceList v-for="service in services" :key="service.title" :service="service"  />
 
       </div>
