@@ -1,68 +1,83 @@
 <template>
-    <main id="app">
-      <section class="services">
-        
-        <div class="min-h-screen  w-full" style="background-color: #ECECEC">
-          <h1 class="pt-10 text-5xl text-orange-400 text-center">Services <span class="text-stone-900">We Provide</span></h1>
-          <p class="text-gray-700 text-center pt-4">We drive our clients’ growth through innovation and hard work</p>
-         
-            <div class="container mx-auto grid md:grid-cols-3 grid-cols-1 gap-6 pt-8">
-            <ServiceList v-for="service in services" :key="service.title" :service="service"  />
-  
-          </div>
+  <section class="services">
+    
+    <div class="min-h-screen  w-full" style="background-color: #f8fafc">
+      <h1 class="font-bold pt-10 text-5xl text-orange-300 text-center relative">Services <span class="text-stone-900">We Provide</span></h1>
+      <img class="absolute top-6 left-[1170px]" :src="Vector" alt="">
+      <img class="absolute top-10 left-[1185px]" :src="Vector1" alt="">
+      <img class="absolute top-[75px] left-[1190px]" :src="Vector2" alt="">
+      <p class="text-gray-700 text-center pt-4">We drive our clients’ growth through innovation and hard work</p>
+     
+        <div class="container mx-auto grid md:grid-cols-3 grid-cols-1 gap-6 pt-8">
+        <ServiceList v-for="service in services" :key="service.title" :service="service"  />
+
       </div>
-      </section>
-    </main>
+  </div>
+  </section>
   </template>
   
   <script>
-import ServiceList from './ServiceList.vue';
+  import ServiceList from './ServiceList.vue';
+  import Vector from '../image/vector.png';
+  import Vector1 from '../image/vector1.png';
+  import Vector2 from '../image/vector2.png'; 
+  import Group1 from '../image/group1.png'; 
+  import Group2 from '../image/group2.png'; 
+  import Group3 from '../image/group3.png'; 
+  import Group4 from '../image/group4.png'; 
+  import Group5 from '../image/group5.png'; 
+  import Group6 from '../image/group6.png'; 
+
   
   export default {
     name: 'app',
     components: {  ServiceList },
     data() {
+
       return {
         services: [
           {
-            icon: 'code',
+            img: [Group1],
             title: 'Web Development',
             text: "Get the customized, modern, browser- friendly, and pixel perfect web design with unique content ",
             
           },
           {
-            icon:"arrow-up-right-from-square",
+            img: [Group2],
             title: 'Cross Platform Apps',
             text: "We create customized websites for reasonable rates to accommodate multiple devices.",
             
           },
           {
-            icon:"desktop",
+            img: [Group3],
             title: 'Desktop Solutions',
             text: "We provide constant monitoringand repairing services to make your site active 24/7.",
             
           },
           {
-            icon:"users-rectangle",
+            img: [Group4],
             title: 'UX & UI Design',
             text: "With our innovative ui-ux design,we guarantee your project'sup-to-date.",
             readme:""
           },
           {
-            icon:"cart-flatbed",
+            img: [Group5],
             title: 'E- commerce',
             text: "Boost your website’s search engine visibility and get the organic targeted audience",
             
           },
           {
-            icon:"industry",
+            img: [Group6],
             title: 'Affordable SEO',
             text: "Boost your website’s search enginevisibility and get the organictargeted audience",
             
           },
           
   
-        ]
+        ],
+        Vector,
+        Vector1,
+        Vector2
       }
     }
   }
