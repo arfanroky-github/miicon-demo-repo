@@ -16,11 +16,11 @@
         </li>
     </ul>
 
-    <p class=" absolute bottom-0 md:left-0 left-16 text-white ">Copyright, miicon 2022. All rights reserved.</p>
+    <p class=" absolute bottom-0 md:left-6 left-16 text-white ">Copyright, miicon 2022. All rights reserved.</p>
     </div>
 
    <div class="mb-16">
-    <div class="grid grid-cols-3 md:gap-28 mx-auto py-12">
+    <div class="grid grid-cols-3 md:gap-20 mx-auto py-12">
        <div>
         <h2 class="text-xl font-bold text-yellow-400 mb-4">Company</h2>
         <ul class="flex flex-col gap-y-3 text-white">
@@ -58,7 +58,7 @@
     </div>
 
    </div>
-   <p class=" absolute md:bottom-0 md:right-[620px] bottom-28 right-16 text-white">Terms & Conditions</p>
+   <p class=" absolute md:bottom-0 md:right-24 bottom-28 right-16 text-white">Terms & Conditions</p>
    </div>
    
   </footer>
