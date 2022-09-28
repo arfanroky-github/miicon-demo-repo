@@ -1,19 +1,19 @@
 <template>
-  <section class="services">
-    
-    <div class="min-h-screen  w-full" style="background-color: #f8fafc">
-      <h1 class="font-bold pt-10 md:text-5xl text-[30px] text-orange-300 text-center relative">Services <span class="text-stone-900">We Provide</span></h1>
-      <img class="absolute md:top-6 top-8 md:left-[1170px] left-[380px] md:w-auto w-2" :src="Vector" alt="">
-      <img class="absolute md:top-10 top-10 md:left-[1185px] left-[390px] md:w-auto w-4" :src="Vector1" alt="">
-      <img class="absolute md:top-[75px] top-16 md:left-[1190px] left-[395px] md:w-auto w-2" :src="Vector2" alt="">
-      <p class="text-gray-700 text-center pt-4">We drive our clients’ growth through innovation and hard work</p>
-     
-        <div class="container mx-auto grid md:grid-cols-3 grid-cols-1 gap-6 pt-10">
-        <ServiceList v-for="service in services" :key="service.title" :service="service"  />
+  <section class="min-h-screen  py-12 mt-12 w-full relative" style="background-color: #f8fafc">
+   <div class="container mx-auto px-8">
+    <h1 class=" font-bold md:text-5xl text-3xl md:text-center text-orange-300">Services <span class="text-stone-900">We Provide</span></h1>
+    <p class="text-gray-700 md:text-center text-xl pt-6">We drive our clients’ growth through innovation and hard work</p>
+    <img class=" absolute md:right-[690px] top-6 right-[170px]  md:block hidden" :src="Vector" alt="">
+    <img class=" absolute md:right-[660px] top-[44px] right-[140px]  md:block hidden" :src="Vector1" alt="">
+    <img class=" absolute md:right-[670px] top-20 right-[150px]  md:block hidden" :src="Vector2" alt="">
+   
+      <div class="grid md:grid-cols-3 grid-cols-1 gap-6 py-10">
+      <ServiceList v-for="service in services" :key="service.title" :service="service"  />
 
-      </div>
-  </div>
-  </section>
+    </div>
+   </div>
+</section>
+
   </template>
   
   <script>

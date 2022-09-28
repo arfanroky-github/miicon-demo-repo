@@ -1,6 +1,6 @@
 <template>
-  <section class="container mx-auto px-6  ">
- <div class="grid md:grid-cols-2 grid-cols-1 gap-4 justify-between items-center pt-32">
+  <section class=" w-full md:h-[80vh] relative">
+ <div class="container mx-auto px-8 grid md:grid-cols-2 grid-cols-1 gap-4 justify-between items-center pt-16">
    <!-- Content -->
    <div >
         <img class="md:w-auto w-[200px]" :src="images.Brand" :alt="images.Brand">
@@ -25,15 +25,15 @@
  </div>
  <!-- Positioning image -->
  
- <img class=" absolute md:top-[520px] md:left-[280px] md:w-[280px] top-[440px] right-0 w-[120px] " :src="images.Vector_1" alt="" >
- <img class=" absolute md:top-[45%] md:left-[290px] md:w-[140px] w-[130px] top-[540px] right-0" :src="images.Vector_2" alt="">
- <img class="absolute top-[160px] right-[140px] w-[140px] md:block hidden" :src="images.Vector_3" alt="">
- <img :class="[!isOpen ? 'block' : 'hidden']" class=" absolute md:top-[115px] md:left-[700px] -top-8 left-16" :src="images.Vector_4" alt="">
- <img class=" absolute top-[430px] -right-48 md:inline-block hidden" :src="images.Vector_5" alt="">
- <img class=" absolute bottom-0 right-40 w-[300px] md:inline-block hidden" :src="images.Vector_6" alt="">
- <img class="absolute top-0 -right-48 md:block hidden w-[200px]" :src="images.Vector_7" alt="">
- <img class=" absolute bottom-0 -left-48 md:inline-block hidden" :src="images.Vector_9" alt="">
- <img class=" absolute top-0 left-[170px] md:block hidden" :src="images.Vector_10" alt="">
+ <img class=" absolute md:top-[380px] md:left-[460px] md:w-[220px] md:block hidden" :src="images.Vector_1" alt="" >
+ <img class=" absolute md:top-[260px] md:left-[470px] md:w-[120px] md:block hidden" :src="images.Vector_2" alt="">
+ <img class="absolute top-[30px] right-[330px] w-[140px] md:block hidden" :src="images.Vector_3" alt=""> 
+ <img :class="[!isOpen ? 'block' : 'hidden']" class=" absolute md:top-0 md:left-[850px] md:block hidden" :src="images.Vector_4" alt="">
+ <img class=" absolute top-[260px] right-0 md:inline-block hidden" :src="images.Vector_5" alt="">
+ <img class=" absolute -bottom-12 right-80 w-[300px] md:inline-block hidden" :src="images.Vector_6" alt="">
+
+ <img class=" absolute -bottom-12 md:inline-block hidden" :src="images.Vector_9" alt=""> 
+
   </section>
 </template>
 
@@ -47,12 +47,10 @@
     import Vector_4 from '../assets/vector 4.png';
     import Vector_5 from '../assets/vector 5.png';
     import Vector_6 from '../assets/vector 6.png';
-    import Vector_7 from '../assets/vector 7.png';
+
     import Vector_9 from '../assets/vector 9.png';
-    import Vector_10 from '../assets/vector 10.png';
-import { log } from 'debug/src/browser';
-import { ref } from '@vue/reactivity';
-   
+
+
 export default {
     data(){
         return{
@@ -65,9 +63,7 @@ export default {
                 Vector_4,
                 Vector_5,
                 Vector_6,
-                Vector_7,
                 Vector_9,
-                Vector_10
             },
             
         }

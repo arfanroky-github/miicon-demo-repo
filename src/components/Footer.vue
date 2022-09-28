@@ -1,7 +1,7 @@
 <template>
-  <footer class="md:w-full md:h-[500px] md:pyx-4 py-12 relative" style="background:#252525;">
-   <div class="container mx-auto grid md:grid-cols-2 grid-cols-1 gap-4 items-center h-full">
-    <div class="col-span-1 mx-auto">
+  <footer class="w-full md:h-[500px] md:py-4 py-12 relative" style="background:#252525;">
+   <div class="container mx-auto grid md:grid-cols-2 grid-cols-1 gap-4 items-center px-8 h-full">
+    <div class="col-span-1 mr-auto">
         <img class="" :src="Brand_2" alt="">
         <p class="text-white py-5">Book your trip in minute, get full <br> control for much longer</p>
 
