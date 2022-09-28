@@ -13,14 +13,12 @@ import Footer from './components/Footer.vue';
 export default {
   name: 'app',
   components: { HomeView, Contact, Footer },
-  data() {
-    return {
+  // data() {
+  //   return {
 
-    }
+  //   }
   }
-}
-</script>
 
-<style>
-  
-</style>
+  </script>
+
+
