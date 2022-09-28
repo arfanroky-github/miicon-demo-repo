@@ -27,9 +27,9 @@
     </ul>
  </div>
  
-    <div :class="[!isOpen ? 'hidden': 'block']" class="md:col-span-1 md:ml-auto md:pl-0 pl-4">
-        <button class=" py-5 px-12 bg-black text-white hover:scale-95 transition-all">Contact Us <Font class="ml-3" icon="arrow-right"/></button>
-       
+    <div  class="md:col-span-1 md:ml-auto md:pl-0 pl-4">
+        <button :class="[!isOpen ? 'hidden': 'block']" class=" py-5 px-12 bg-black text-white hover:scale-95 transition-all">Contact Us <Font class="ml-3" icon="arrow-right"/></button>
+
     </div>
 
 </div>
@@ -86,6 +86,7 @@ export default {
 }
 
 
+// console.log('isopen', isOpen);
 </script>
 
 <style>

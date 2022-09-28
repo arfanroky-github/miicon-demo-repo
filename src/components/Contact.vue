@@ -12,7 +12,7 @@
             <input class=" block outline-none bg-transparent py-4  pr-12 my-8 border-b-2 border-black placeholder:text-black md:w-[400px] w-full" name="email" type="email" placeholder="Email">
            <div class="flex flex-col my-8">
             <label for="Email-Body">Email Body</label>
-            <textarea class="resize-none bg-transparent border-b-2 border-black md:w-[400px] w-full" name="email body" cols="30" rows="5"></textarea>
+            <textarea class="resize-none bg-transparent outline-none border-b-2 border-black md:w-[400px] w-full" name="email body" cols="30" rows="5"></textarea>
            </div>
            <button type="submit" class="md:w-[400px] w-full py-4 px-16 mt-8 bg-black text-white font-semibold ">
             Send <Font class="ml-4" icon="arrow-right"/>
