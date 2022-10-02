@@ -1,5 +1,5 @@
 <template>
-  <section class="min-h-screen  py-12 mt-12 w-full relative" style="background-color: #f8fafc">
+  <section class="min-h-screen  py-12 mt-12 w-full relative" style="background-color: #F8FAFC">
    <div class="container mx-auto px-8">
     <h1 class=" font-bold md:text-5xl text-3xl md:text-center text-orange-300">Services <span class="text-stone-900">We Provide</span></h1>
     <p class="text-gray-700 md:text-center text-xl pt-6">We drive our clients’ growth through innovation and hard work</p>
@@ -7,7 +7,7 @@
     <img class=" absolute md:right-[660px] top-[44px] right-[140px]  md:block hidden" :src="Vector1" alt="">
     <img class=" absolute md:right-[670px] top-20 right-[150px]  md:block hidden" :src="Vector2" alt="">
    
-      <div class="grid md:grid-cols-3 grid-cols-1 gap-6 py-10">
+      <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-[18px] gap-y-[28px] py-10">
       <ServiceList v-for="service in services" :key="service.title" :service="service"  />
 
     </div>
